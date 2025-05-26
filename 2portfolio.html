@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshit Srivastava | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 20px;
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .left-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .profile-pic {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: zoomIn 1s ease-in-out;
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .profile-pic img:hover {
+      transform: scale(1.2);
+    }
+    .name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #0ff;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #0ff;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    #about {
+      background-color: #0a0a0a;
+      box-shadow: 0 0 15px #0ff;
+      border-radius: 15px;
+      margin: 30px auto;
+      width: 80%;
+      animation: zoomIn 1s ease-in-out;
+    }
+    #projects {
+      background: linear-gradient(145deg, #0f0c29, #302b63, #24243e);
+      color: #ff00ff;
+      padding: 60px 30px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff00ff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #fff;
+    }
+    #contact {
+      background-color: #000;
+      box-shadow: 0 0 15px #0ff;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    a {
+      color: #0ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="left-header" data-aos="zoom-in">
+      <div class="profile-pic">
+        <img src="profile.jpg" alt="Harshit Srivastava" id="popupImage">
+      </div>
+      <div class="name">Harshit Srivastava</div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" data-aos="zoom-in">
+      <h2>About Me</h2>
+      <p>I am a passionate full-stack developer with experience in C, Python, and data visualization. I love creating clean and responsive interfaces and solving real-world problems using code.</p>
+      <p>As a data visualization intern at Tata Group, I applied my skills in data analysis to create impactful visualizations. I collaborated with a team to analyze and present data effectively, gaining valuable insights into the company's operations and professional standards.</p>
+      <p>Prior to this, I completed a course in Python language for data science with Cognitive Classes powered by IBM Developer Skills Network, where I developed my skills in Python programming and data analysis.</p>
+      <p>I am currently pursuing my education in Computer Science engineering at Feroze Gandhi Institute of Engineering and Technology (AKTU), Lucknow, and I am passionate about applying my knowledge and skills to solve real-world problems.</p>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in-up">
+          <h3><i class="fas fa-globe"></i> Portfolio Website</h3>
+          <p>A dynamic portfolio showcasing my development journey, built with HTML, CSS, and JavaScript.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in-up">
+          <h3><i class="fas fa-robot"></i> Chatbot</h3>
+          <p>An interactive chatbot built in Python capable of basic conversation handling and responses.</p>
+          <a href="https://github.com/HarshitSrivastava07/code_alpha_chatbot/blob/main/chatbot.py" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in-up">
+          <h3><i class="fas fa-chart-line"></i> Stock Portfolio</h3>
+          <p>A Python-based tool to track and manage a stock portfolio, offering insights into investments.</p>
+          <a href="https://github.com/HarshitSrivastava07/code_alpha_stockportfolio/blob/main/stock_portfolio.py" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in-up">
+          <h3><i class="fas fa-gamepad"></i> Hangman Game</h3>
+          <p>A classic hangman game implemented in Python with interactive guessing and scoring features.</p>
+          <a href="https://github.com/HarshitSrivastava07/code_alpha_hangman_game/blob/main/hangman.py" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="zoom-in">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or have any questions, feel free to reach out:</p>
+      <p><strong>Phone:</strong> <a href="tel:+918738972929" class="email-link">8738972929</a></p>
+      <p><strong>Email:</strong> <a href="mailto:harshitsrivastava67296@gmail.com" class="email-link">harshitsrivastava67296@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Harshit Srivastava. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+
+    // Popup effect on profile image
+    document.getElementById('popupImage').addEventListener('click', () => {
+      const img = document.createElement('img');
+      img.src = 'profile.jpg';
+      img.style.position = 'fixed';
+      img.style.top = '50%';
+      img.style.left = '50%';
+      img.style.transform = 'translate(-50%, -50%) scale(1)';
+      img.style.maxWidth = '90vw';
+      img.style.maxHeight = '90vh';
+      img.style.borderRadius = '15px';
+      img.style.zIndex = '9999';
+      img.style.boxShadow = '0 0 20px #0ff';
+      img.style.transition = 'transform 0.3s';
+      img.addEventListener('click', () => document.body.removeChild(img));
+      document.body.appendChild(img);
+    });
+  </script>
+</body>
+</html>
